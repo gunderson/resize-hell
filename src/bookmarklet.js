@@ -13,7 +13,7 @@
 	function addSound(){
 	    var audio = new Audio();
 	    audio.preload = "auto";
-	    audio.src = 'http://pgtool-2.local:3000/assets/screams.mp3';
+	    audio.src = 'https://cdn.rawgit.com/gunderson/resize-hell/7f2dd534405bfa42c74ce1991097096495dd3f73/assets/screams.mp3';
 	    audio.loop = "true";
 		audio.style.opacity = 0;
 
