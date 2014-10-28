@@ -31,7 +31,7 @@
 		var directionHeight = window.innerHeight - spookyscary.prevWindowHeight;
 		spookyscary.prevWindowWidth = window.innerWidth;
 		spookyscary.prevWindowHeight = window.innerHeight;
-		var direction = directionHeight > directionWidth ? directionHeight : directionWidth;
+		var direction = Math.abs(directionHeight) > Math.abs(directionWidth) ? directionHeight : directionWidth;
 		direction = direction > 0 ? 1 : -1;
 
 		if (direction !== spookyscary.resizeDirection){
