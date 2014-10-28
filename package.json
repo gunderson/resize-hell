@@ -1,0 +1,18 @@
+{
+  "name": "resize-hell",
+  "version": "1.0.0",
+  "description": "A bookmarklet that adds screaming when the browser window is resized more often than would be typical.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrick Gunderson",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "uglifyjs": "^2.3.6",
+    "underscore": "^1.7.0"
+  }
+}
