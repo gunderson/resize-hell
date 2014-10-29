@@ -2,7 +2,7 @@ var fs = require("fs");
 var _ = require("underscore");
 var uglify = require("uglifyjs");
 
-var input = fs.readFileSync("src/bookmarklet.js", "utf-8");
+var input = fs.readFileSync("src/resize-hell.js", "utf-8");
 var output = uglify.minify(input, {fromString: true}).code;
 
 fs.writeFileSync("build/bookmarklet.min.js", output);
