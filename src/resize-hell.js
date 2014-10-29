@@ -38,7 +38,7 @@
 		div.style.verticalAlign = "middle";
 		div.style.zIndex = "1000000000000";
 
-		div.innerHTML = "<h1>STOP IT</h1>";
+		div.innerHTML = "<h1><img src='http://i.imgur.com/lrAIgUj.jpg'></h1>";
 		document.body.appendChild(div);
 
 		var h1 = document.querySelector("#STOP-IT-OVERLAY h1")
@@ -75,7 +75,7 @@
 		console.log("triggerScreams 0")
 		spookyscary.play();
 		clearTimeout(spookyscary.audiotimer);
-		spookyscary.audiotimer = setTimeout(spookyscary.stop, 4000);
+		spookyscary.audiotimer = setTimeout(spookyscary.stop, 5000);
 	}
 
 	spookyscary.play = function(){
