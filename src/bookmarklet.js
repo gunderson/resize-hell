@@ -24,6 +24,33 @@
 			onResizeBookmarklet();
 			oldResize();
 		}
+
+		var div = document.createElement("div");
+		div.id = "STOP-IT-OVERLAY";
+		div.style.display = "table";
+		div.style.position = "fixed";
+		div.style.width = "100%";
+		div.style.height = "100%";
+		div.style.top = "-100%";
+		div.style.left = "0";
+		div.style.background = "rgba(255,0,0,0.8)";
+		spookyscary.div = div;
+		div.style.verticalAlign = "middle";
+		div.style.zIndex = "1000000000000";
+
+		div.innerHTML = "<h1>STOP IT</h1>";
+		document.body.appendChild(div);
+
+		var h1 = document.querySelector("#STOP-IT-OVERLAY h1")
+		h1.style.display = "table-cell";
+		h1.style.margin = "0";
+		h1.style.padding = "0";
+		h1.style.color = "#fff";
+		h1.style.fontFamily = "Arial";
+		h1.style.textAlign = "center";
+		h1.style.verticalAlign = "middle";
+
+
 	}
 
 	function onResizeBookmarklet(){
@@ -53,10 +80,12 @@
 
 	spookyscary.play = function(){
 		spookyscary.audio.play();
+		spookyscary.div.style.top = "0";
 	}
 
 	spookyscary.stop = function(){
 		spookyscary.audio.pause();
+		spookyscary.div.style.top = "100%";
 	}
 
 	function initBookmarklet(){
